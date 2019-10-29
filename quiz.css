@@ -1,0 +1,8 @@
+.display-4,
+.lead {
+  text-align: center;
+}
+.question-container,
+#timer-p {
+  display: none;
+}

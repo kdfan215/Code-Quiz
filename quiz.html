@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to The Quiz!</h1>
+        <p class="lead">
+          Please take a few moments to answer these questions. Be aware that you
+          are being timed.
+        </p>
+        <button id="start">Begin Quiz</button>
+      </div>
+    </div>
+    <div id="question-container-1" class="question-container">
+      <p>What year did JavaScript debut?</p>
+      <div>
+      <input id="1995" type="radio" name="year" value="1995" />
+      <label for="1995">1995</label><br />
+      <input id="1999" type="radio" name="year" value="1999" />
+      <label for="1999">1999</label><br />
+      <input id="1990" type="radio" name="year" value="1990" />
+      <label for="1990">1990</label>
+    </div>
+      <button id="submit-1" class="submit-button">Submit</button>
+    
+    </div>
+    <div id="question-container-2" class="question-container">
+      <p>What is the correct syntax for a for loop?</p>
+      <div>
+      <input id="Q2A1" type="radio" name="Q2" value="var (i=0; i<3, i++;" />
+      <label for="var (i=0; i<3, i++;">var (i=0; i<3, i++;)</label><br />
+      <input id="Q2A2" type="radio" name="Q2" value="for var(i=0;i<5;i++)" />
+      <label for="for var(i=0; i<5; i++)">for var(i=0; i<5; i++) </label><br />
+      <input id="Q2A3" type="radio" name="Q2" value="i=0; i<1; i++" />
+      <label for="i=0;i<1;i++">i=0; i<1; i++</label>
+    </div>
+      <button id="submit-2" class="submit-button">Submit</button>
+    </div>
+    <div id="question-container-3" class="question-container">
+       
+      <p>What symbol in jQuery is a selector?</p>
+      <div>
+      <input id="!" type="radio" name="selector" value="!" />
+      <label for="!">!</label><br />
+      <input id="$" type="radio" name="selector" value="$" />
+      <label for="$">$</label><br />
+      <input id="#" type="radio" name="selector" value="#" />
+      <label for="#">#</label>
+    </div>
+      <button id="submit-3" class="submit-button">Submit</button>
+    </div>
+    <div id="question-container-4" class="question-container">
+       
+        <p>What is one way to declare a variable in JavaScript</p>
+        <div>
+        <input id="var" type="radio" name="declare" value="var" />
+        <label for="!">var</label><br />
+        <input id="variable" type="radio" name="declare" value="variable" />
+        <label for="variable">variable</label><br />
+        <input id="use" type="radio" name="declare" value="use" />
+        <label for="use">use</label>
+      </div>
+        <button id="submit-4" class="submit-button">Submit</button>
+      </div>
+    <div id="question-container-5" class="question-container">
+ 
+      <p>In HTML, which of the following is a self-closing tag?</p>
+      <div>
+      <input id="p" type="radio" name="tag" value="p" />
+      <label for="p">p</label><br />
+      <input id="h2" type="radio" name="tag" value="h2" />
+      <label for="h2">h2</label><br />
+      <input id="img" type="radio" name="tag" value="img" />
+      <label for="img">img</label>
+    </div>
+    <button id="submit">Submit</button>
+    </div>
+    <div id="submit-container">
+    <p id="timer-p">The time you have remaining is: <span id="timer">75</span></p>
+   
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
